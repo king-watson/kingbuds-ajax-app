@@ -1,41 +1,81 @@
-# Kingbuds Project 🎵
+# Kingbuds Ajax App 🎵
 
-Welcome! This project showcases my creative process in designing and developing a unique pair of earbuds and their charging case. It highlights my exploration of form, function, and user experience — blending product design, 3D modeling, and visual storytelling to create an innovative and engaging concept.
+This project is the dynamic upgrade of my KingBuds promotional website. Building on the earlier static Earbuds Promotional Page, this assignment focuses on transforming the Model Page into an interactive, data-driven experience. Using SASS, AJAX, the HTML <template> element, and the Fetch API, the page now pulls live product information from an external API and updates the interface based on user interactions with the hotspots.
+
+The goal of this assignment is to combine everything learned throughout the course to create a responsive, fully functional model viewer that adapts across mobile, tablet, and desktop devices while maintaining clean code, proper GitHub workflow, and a smooth user experience.
+
+The final page is also fully responsive.
+
+Mobile: hides the 3D model and displays a static product image
+
+Tablet & Desktop: displays the 3D model and hides the static image
+
+These improvements create a more realistic product-viewing experience and demonstrate the use of modern front-end techniques.
 
 ![my earbuds](images/kingbuds-readme.jpg)
 
-## Project Objectives 🎯<br/>
-Explore Innovative Design: Develop a unique and modern concept for earbuds and a charging case that stand out through form, color, and usability.
+## Features 🎯<br/>
 
-Apply 3D Skills: Use Cinema 4D to model, texture, light, and animate the product with attention to realism and detail.
+Dynamic API Loading - Fetches KingBuds material data on page load using the Fetch API.
 
-Enhance Visual Communication: Create visuals that clearly present the design’s features, function, and aesthetic appeal.
+HTML Template Rendering - All materials are displayed using the <template> element for clean, reusable markup.
 
-Develop Presentation Assets: Produce promotional materials and a web layout to showcase the product in a professional and engaging way.
+Interactive Hotspots - Clicking a hotspot updates the page with the correct information from the API.
 
-Demonstrate Growth: Reflect personal progress in design thinking, technical skills, and creativity throughout the project process.
+Loading Spinner - Displays a loading indicator while waiting for the API response.
+
+Error Handling - Provides user feedback if something goes wrong with the request.
+
+Responsive Layout - Optimized for mobile, tablet, and desktop.
+
+Static image on mobile
+
+3D model on larger screens
+
+SASS Workflow
+Organized styling using variables, nesting, partials, and compiled output.
+
+Proper Git Flow
+Includes branching, merging, and documentation in GitHub.
 
 ## Technologies Used 🤖<br/>
 
-Cinema 4D – For 3D modeling, texturing, lighting, and animation of the earbuds and charging case.
+HTML5
 
-Adobe Photoshop – To enhance renders, create textures, and develop promotional visuals.
+CSS3 / SASS
 
-Adobe Illustrator – For vector elements, logo design, and layout planning.
+JavaScript 
 
-Adobe After Effects – To create motion graphics and refine the final animation.
+Fetch API / AJAX
 
-HTML, CSS, and JavaScript – For building the promotional website and integrating interactive features.
+HTML Template Element
 
-SASS (SCSS) – To organize and manage styles efficiently using variables, nesting, and mixins.
+Git & GitHub
 
-GSAP (GreenSock Animation Platform) – To create smooth, dynamic animations and transitions for interactive web elements.
+## How It Works ⚙️<br/>
 
-## Features ⚙️<br/>
+On Page Load: A Fetch request runs automatically and retrieves JSON from the earbuds API.
 
-Fully Responsive
-Valid HTML5 & CSS3
-GreenSock Animations
+Loading State: A spinner is shown until the data is fully received.
+
+Success Response: The JSON is stored as the application state and used to:
+
+Build material cards using the template element
+
+Update the display when hotspots are clicked
+
+Error Response: If the fetch fails, a friendly error message is shown to the user.
+
+Device Handling: Different elements are shown or hidden depending on the viewport size.
+
+## GitHub Workflow 📄<br/>
+Work is completed on feature branches, never directly on master.
+
+All features are merged through pull requests.
+
+The final version is merged into the master branch before submission.
+
+The README contains all instructions and project info.
 
 ## Installation 🧭<a id="installation"></a>
 To run the portfolio locally:
@@ -44,9 +84,13 @@ To run the portfolio locally:
 - Navigate into the project directory:
 - Open the index.html file in your browser, or if using a local server, start the server and navigate to localhost to view.
 
+## Conclusion 🏁<br/>
+This assignment completes the dynamic transformation of the KingBuds Model Page by combining all major course concepts—SASS, AJAX, templating, Fetch API, responsive design, and proper Git workflow—into one cohesive project.
+The result is a more interactive, polished, and modern product page that provides users with a smooth experience across all devices.
+
 ## Contact 📫<a id="contact"></a>
 Feel free to reach out if you’d like to collaborate or have any questions!
 
 Email: [Kingsley Watson](mailto:watsonkingsley38@gmail.com)
 
-Thank you for checking out my earbuds!
+Thank you for checking out my earbuds and ajax responsive site!
